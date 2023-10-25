@@ -9,17 +9,17 @@
   </head>
 
   <body>
-    
+
     <?php
     $userName = "";
     if ( isset( $_POST['radius'] ) ){
       $radius = $_POST['radius'];
     }
     echo "<h1>For a Circle of Radius ".$radius."</h1>\n";
-    echo "<p>Area = \n";
-    echo "<p>Circumference = \n";
+    echo "<p>Area = ".(pi()*$radius**2)."</p>\n";
+    echo "<p>Circumference = ".(2*pi()*$radius)."</p>\n";
     ?>
-    
+
   </body>
-  
+
 </html>
